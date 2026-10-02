@@ -1,0 +1,20 @@
+# Java compiled files
+*.class
+
+# Build output
+bin/
+target/
+out/
+build/
+.gradle/
+
+# Java crash logs
+hs_err_pid*
+replay_pid*
+
+# Visual Studio Code local files
+.vscode
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
