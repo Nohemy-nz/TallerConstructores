@@ -2,6 +2,22 @@ public class Libro {
     private String titulo, autor;
     private boolean disponible;
 
+public Libro(){
+        disponible = true;
+    }
+
+public Libro(String titulo, String autor){
+        this.titulo = titulo;
+        this.autor = autor;
+        this.disponible = true;
+    }
+
+public Libro(String titulo, String autor, boolean disponible){
+        this.titulo = titulo;
+        this.autor = autor;
+        this.disponible = disponible;
+    }
+
 public String getTitulo(){
     return titulo; 
 }

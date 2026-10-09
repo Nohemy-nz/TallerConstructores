@@ -96,6 +96,62 @@ public class App {
         deposito1.mostrarEstado();
 
 
-    }
+        //constructores Libro
+        System.out.println();
+        Libro l1 = new Libro();
+        Libro l2 = new Libro("Don Quijote", "Miguel de Cervantes");
+        Libro l3 = new Libro("El principito","Antoine de Saint-Exupéry",false);
+
+        l1.mostrarInfo();
+        l2.mostrarInfo();
+        l3.mostrarInfo();
+
+
+        // contructor vuelo
+
+        Vuelo vuelo1 = new Vuelo();
+        Vuelo vuelo2 = new Vuelo("AV101", "Bogotá", "Medellín");
+        Vuelo vuelo3 = new Vuelo("AV202", "Bogotá", "Cali", 45, 100);
+
+        vuelo1.mostrarInfo();
+        vuelo2.mostrarInfo();
+        vuelo3.mostrarInfo();
+
+        vuelo3.embarcar(5);
+
+        vuelo3.mostrarInfo();
+        vuelo3.desembarcar(20);
+        vuelo3.mostrarInfo();
+
+        //Contructor Deposito de Agua
+          System.out.println();
+        DepositoAgua dep1 = new DepositoAgua(100.0);
+        DepositoAgua dep2 = new DepositoAgua(50.0, 10.0);
+    
+        dep1.setDepositoDesborde(dep2);
+
+        System.out.println("Estado inicial:");
+
+        dep1.mostrarEstado();
+        dep2.mostrarEstado();
+
+        System.out.println("Agregando agua");
+        dep1.agregarAgua(120);
+        
+        System.out.println("Estado final:");
+        dep1.mostrarEstado();
+        dep2.mostrarEstado();
+      
+        
+
+
+       
+
+    
+
+        }
+
 
 }
+
+

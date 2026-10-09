@@ -3,6 +3,25 @@ public class DepositoAgua {
     private double volumenActual;
     private DepositoAgua depositoDesborde;
 
+
+    public DepositoAgua(){
+
+    }
+
+    public DepositoAgua(Double capacidad){
+        this.capacidad = capacidad;
+        volumenActual = 0;
+        depositoDesborde = null;
+
+    }
+
+    public DepositoAgua(Double capacidad, Double volumenActual){
+        this.capacidad = capacidad;
+        this.volumenActual = volumenActual;
+        depositoDesborde = null;
+
+    }
+
     public double getCapacidad(){
         return capacidad;
     }
@@ -34,6 +53,9 @@ public class DepositoAgua {
         return depositoDesborde;
     }
 
+    public void setDepositoDesborde(DepositoAgua depositoDesborde){
+        this.depositoDesborde = depositoDesborde;
+    }
     public void depositoDesborde(DepositoAgua depositoDesborde){
         this.depositoDesborde = depositoDesborde;
     }
